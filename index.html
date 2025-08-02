@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stonks AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1> StonksAI </h1>
+    <img src="assets/logo.png" class="logo" alt="Stonks AI">
+    
+    <h2>Add up to 3 stock tickers for your ultra-accurate predictions 👇</h2>
+    
+    <div class="input-row">
+      <input type="text" id="tickerInput" placeholder="e.g. MSFT">
+      <button onclick="addTicker()">➕</button>
+    </div>
+    
+    <div id="tickerList" class="tickers"></div>
+    
+    <button class="generate" onclick="generateReport()">Generate Report</button>
+    
+    <p class="note">Always correct 15% of the time!</p>
+    <div id="report" class="report"></div>
+    
+    <p class="footer">© This is not real financial advice!</p>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
